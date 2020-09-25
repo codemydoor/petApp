@@ -2,11 +2,12 @@ import React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 import flash from "../assets/flash.jpg";
 import Petlist from "./petList";
-function Pets({ name, location, age, type }) {
+function Pets({ name, location, age, type, image }) {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image style={styles.images} />
+        {/* <Image style={styles.images} /> */}
+        <View style={styles.images}>{image} </View>
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.petname}>{name}</Text>

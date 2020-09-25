@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, FlatList } from "react-native";
 import Pets from "../component/Pets";
-import cat from "../assets/cat.jpg";
 
 function Petlist() {
   const petList = [
@@ -11,12 +10,40 @@ function Petlist() {
       location: "Tema",
       type: "bull",
       id: "1",
-      image: { cat },
+      image: require("../assets/flash.jpg"),
     },
-    { name: "Flash", age: "8", location: "Ashaiman", type: "bull", id: "2" },
-    { name: "Risky", age: "9", location: "Lashibi", type: "bull", id: "3" },
-    { name: "Horror", age: "11", location: "Newtown", type: "bull", id: "4" },
-    { name: "Bully", age: "15", location: "Kotoku", type: "bull", id: "5" },
+    {
+      name: "Flash",
+      age: "8",
+      location: "Ashaiman",
+      type: "bull",
+      id: "2",
+      image: require("../assets/flash.jpg"),
+    },
+    {
+      name: "Risky",
+      age: "9",
+      location: "Lashibi",
+      type: "bull",
+      id: "3",
+      image: require("../assets/flash.jpg"),
+    },
+    {
+      name: "Horror",
+      age: "11",
+      location: "Newtown",
+      type: "bull",
+      id: "4",
+      image: require("../assets/flash.jpg"),
+    },
+    {
+      name: "Bully",
+      age: "15",
+      location: "Kotoku",
+      type: "bull",
+      id: "5",
+      image: require("../assets/flash.jpg"),
+    },
   ];
 
   return (
