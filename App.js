@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View, TextInput } from "react-native";
 import Petlist from "./component/petList";
-import Pets from "./component/Pets";
+// import Pets from "./component/Pets";
 
 export default function App() {
   return (

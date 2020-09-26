@@ -18,7 +18,7 @@ function Petlist() {
       location: "Ashaiman",
       type: "bull",
       id: "2",
-      image: require("../assets/flash.jpg"),
+      image: require("../assets/parrot.jpg"),
     },
     {
       name: "Risky",
@@ -26,7 +26,7 @@ function Petlist() {
       location: "Lashibi",
       type: "bull",
       id: "3",
-      image: require("../assets/flash.jpg"),
+      image: require("../assets/rabbit.jpg"),
     },
     {
       name: "Horror",
@@ -34,7 +34,7 @@ function Petlist() {
       location: "Newtown",
       type: "bull",
       id: "4",
-      image: require("../assets/flash.jpg"),
+      image: require("../assets/cat.jpg"),
     },
     {
       name: "Bully",
@@ -42,25 +42,27 @@ function Petlist() {
       location: "Kotoku",
       type: "bull",
       id: "5",
-      image: require("../assets/flash.jpg"),
+      image: require("../assets/damal.jpg"),
     },
   ];
 
   return (
     <FlatList
       data={petList}
+      keyExtractor={(item) => item.id}
       renderItem={({ item }) => {
         return (
-          <Pets
-            name={item.name}
-            age={item.age}
-            location={item.location}
-            type={item.type}
-            image={item.image}
-          />
+          <View>
+            <Pets
+              name={item.name}
+              age={item.age}
+              location={item.location}
+              type={item.type}
+              image={item.image}
+            />
+          </View>
         );
       }}
-      keyExtractor={(item) => item.id}
     />
   );
 }
